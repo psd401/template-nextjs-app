@@ -10,12 +10,15 @@ Map, not manual. If a line here wouldn't prevent a mistake, delete it. Change th
 ## Commands (exact)
 
 ```bash
-npm run dev          # local dev server
-npm run build        # production build — must pass before PR
-npm test             # vitest run (CI gate; a zero-test repo fails psd-ci)
-npm run lint         # eslint . — includes test-quality rules
-npm run typecheck    # tsc --noEmit
+bun install          # bun is the PSD JS package manager (bun.lock is committed)
+bun run dev          # local dev server
+bun run build        # production build — must pass before PR
+bun run test         # vitest run (CI gate; a zero-test repo fails psd-ci)
+bun run lint         # eslint . — includes test-quality rules
+bun run typecheck    # tsc --noEmit
 ```
+
+Always `bun run test` (the package script), never bare `bun test` (bun's own runner).
 
 ## Map
 

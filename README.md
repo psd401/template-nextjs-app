@@ -17,18 +17,19 @@ PSD401 template for Next.js applications. Start every new Next.js repo from this
 2. **Set repo custom properties**: `tier` (default `c-experiment`), `owner`, `lifecycle: active` — a repo is born governed or not born.
 3. **Add topics** for discovery (e.g. `nextjs`, `student-facing`).
 4. **Review CLAUDE.md**: fill in the architecture map for your app; prune anything that doesn't apply. It is kept under 100 lines — treat it like code.
-5. **Install and verify green**: `npm install && npm test && npm run lint && npm run typecheck`.
+5. **Install and verify green**: `bun install && bun run test && bun run lint && bun run typecheck` (bun is the PSD JS runtime rule; `bun.lock` is committed).
 6. Replace `components/counter.tsx` and its test with your first real component — do not delete the test without replacing it.
 
 ## Commands
 
 | Task | Command |
 |------|---------|
-| Dev server | `npm run dev` |
-| Build | `npm run build` |
-| Test | `npm test` |
-| Lint | `npm run lint` |
-| Typecheck | `npm run typecheck` |
+| Install | `bun install` |
+| Dev server | `bun run dev` |
+| Build | `bun run build` |
+| Test | `bun run test` |
+| Lint | `bun run lint` |
+| Typecheck | `bun run typecheck` |
 
 ## Owner
 
