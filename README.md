@@ -7,7 +7,7 @@ PSD401 template for Next.js applications. Start every new Next.js repo from this
 - **Next.js 16 (App Router) + React 19 + TypeScript** — `strict` and `noUncheckedIndexedAccess` on.
 - **Vitest 4 + Testing Library** with one real, behavior-asserting example test (`components/counter.test.tsx`). PSD CI fails repos with zero tests by design — keep at least one real test at all times.
 - **ESLint (flat config)** — `next/core-web-vitals`, `next/typescript`, and the PSD test-quality rules (`vitest/expect-expect`, no `.only`, no `.skip`).
-- **PSD CI wiring** — `.github/workflows/` call the org reusable workflows (`reusable-psd-ci`, `reusable-claude-review`, `reusable-license-check`). No CI logic lives in this repo.
+- **PSD CI wiring** — `.github/workflows/` call the org reusable workflows (`reusable-psd-ci`, `reusable-claude-review`, `reusable-security-scan`, `reusable-openwiki`). No CI logic lives in this repo.
 - **Dependabot** — weekly GitHub Actions + npm updates, minor/patch grouped.
 - **MIT LICENSE, AGENTS.md, and a CLAUDE.md that imports it (`@AGENTS.md`)** — required in every PSD repo.
 
